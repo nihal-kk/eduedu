@@ -1,0 +1,123 @@
+:root {
+     --primary: #4e73df;
+     --secondary: #1cc88a;
+     --dark: #5a5c69;
+     --light: #f8f9fc;
+     --accent: #f6c23e;
+}
+
+.body{
+font-family: 'Poppins', sans-serif;
+color: var(--dark);
+background-color: var(--light);
+overflow-x: hidden;
+}
+.navbar {
+background-color: rgb(0, 191, 255);
+box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+height: 75px;
+}
+   
+.navbar-brand {
+font-weight: 700;
+color: var(--primary);
+font-size: 1.8rem;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+
+
+}
+.full-screen-img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+#wellcome{
+background: linear-gradient(135deg, #667eea 0%, #00a6ff 100%);
+}
+#hey{
+color: rgb(255, 157, 0);
+}
+#fname,#lname{
+     color: #ffffff;
+}
+.Craft{
+     color: black;
+}
+.bro{
+     color: rgb(255, 255, 255);
+}
+#eduab{
+     color: #ff8000;
+}
+#abouts{
+     background: linear-gradient(135deg, #009dff 0%, #004074 100%);
+}
+#abouts p {
+    color: #f8f9fc;
+}
+
+#vis {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem 1rem;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+}
+#vis i {
+  align-self: center;
+  color: green;
+}
+#vis h5 {
+  margin-bottom: 0.25rem;
+}
+#vis p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+#ves{
+     color: #ff8000;
+}
+
+#what {
+    width: 100%;
+    height: initial;
+    background-image: url("photos/what\'sbr.jpg");
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#what p {
+     color: rgb(0, 0, 0);
+}
+#what-hed {
+     color: #000000;
+text-shadow: 1px 1px 10px rgb(255, 255, 255);
+
+}
+.feature-icon{
+     width: 70px;
+     height: 70px;
+     background:white;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 20px;
+     font-size: 1.8rem;
+     color: rgb(0, 187, 255);
+}
+.card:hover .feature-icon{
+     background:  rgb(0, 187, 255);
+     color:white;
+}
+.card:hover {
+transform: scale(1.03);
+cursor: pointer;
+transition: transform 1s ease, box-shadow 0.3s 
+ease;
+box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
