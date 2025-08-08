@@ -27,13 +27,14 @@
 
 </head>
 <body>
-    <div class="container border mt-3 bg-warning " style="position: relative; top: 100px;">
+    <div class="container border mt-3 bg-warning " style="position: relative; top: 10px;">
         <div class="row">
             <div class="col-md-6 p-5 bg-primary text-white">
                 <h1>Thanks for choosing EduCode! </h1>
                 <h3 style="color: rgb(255, 153, 0);">Learn like a bro. Code like a bro.</h3>
                 <h5 style="color: rgb(0, 0, 0);">Just drop your name, email, and a quick message  <br> no login needed.</h5>
-                <h5> Help us understand our learners and shape a better EduCode for you.</h5>             
+                <h5> Help us understand our learners and shape a better EduCode for you.</h5>  <br>
+                <div style="text-align: center;"><img src="photos/nwe.png" alt="" class="img-fluid" style="border-radius: 50px; width: 400px;"></div>          
             </div>
             <div class="col-md-6 py-4">
                 <form  id="contact-form"
@@ -53,7 +54,7 @@
                     <h5 for="message">Message</h5>
                     <textarea id="message" rows="5" class="form-control" placeholder="message"    required></textarea>
                 </div>
-                <br><button class="btn btn-primary" onclick="sendMail()"    required>submit</button>
+                <br><button class="btn btn-primary"    required>submit</button>
                 </form>
             </div>
         </div>
@@ -84,5 +85,14 @@
     <script>
       AOS.init();
     </script>
+
+    <script>
+  window.onload = function () {
+    const username = localStorage.getItem("username");
+    if (username) {
+      window.location.href = "fisrt.html";
+    }
+  };
+</script>
 </body>
 </html>
