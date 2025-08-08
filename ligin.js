@@ -5,9 +5,13 @@ function sendMail() {
     message: document.getElementById("message").value,
   };
 
-  const serviceID = "service_65yhtd7";
+  const serviceID = "service_7qrh5q9";
   const templateID = "template_qwe2lce";
+  let name = document.getElementById('name').value
 
+  localStorage.setItem('username', name)
+  console.log('name', name);
+  
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
@@ -23,3 +27,5 @@ function sendMail() {
       alert("❌ Failed to send message. Please try again later.");
     });
 }
+const fname =localStorage.getItem("username")
+document.getElementById('fname').innerHTML = fname;
